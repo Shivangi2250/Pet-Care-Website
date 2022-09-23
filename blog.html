@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ec8478f83d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/utility.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Read Our Blog</title>
+</head>
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <div class="company-icon">
+        <div class="icon">
+          <img src="../image_resources/home/beowuff1.png" alt="">
+        </div>
+        <div class="name">
+          <h1 class="logo">
+            <span>Beowuff</span>
+          </h1>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>Our Work</h1>
+    </div>
+  </header>
+
+  <main>
+    <article class="flex-columns">
+      <dev class="row">
+        <div class="column">
+          <dev class="column-1">
+            <img src="../image_resources/blog/blog1.jpg" alt="image">
+          </dev>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>
+                Virendra Sharma
+              </strong> | Sept 20 2022
+            </p>
+            <p>Lorem ipsum dolor sit amet consecte
+              tur adipisicing elit. Temporibus labore ex 
+              nesciunt debitis vero deserunt, nam delectus
+              saepe voluptate accusamus.</p>
+            <a href="post.html" class="btn btn-dark">
+              <i class="fas fa-chevron-right"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </dev>
+    </article>
+
+    <article class="flex-columns flex-reverse">
+      <dev class="row">
+        <div class="column">
+          <dev class="column-1">
+            <img src="../image_resources/blog/blog2.jpg" alt="image">
+          </dev>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-dark">
+            <h2>Blog Post Two</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>
+                Virendra Sharma
+              </strong> | Sept 20 2022
+            </p>
+            <p>Lorem ipsum dolor sit amet consecte
+              tur adipisicing elit. Temporibus labore ex 
+              nesciunt debitis vero deserunt, nam delectus
+              saepe voluptate accusamus.</p>
+            <a href="post.html" class="btn btn-light">
+              <i class="fas fa-chevron-right"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </dev>
+    </article>
+
+    <article class="flex-columns">
+      <dev class="row">
+        <div class="column">
+          <dev class="column-1">
+            <img src="../image_resources/blog/blog1.jpg" alt="image">
+          </dev>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>Blog Post Three</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>
+                Virendra Sharma
+              </strong> | Sept 20 2022
+            </p>
+            <p>Lorem ipsum dolor sit amet consecte
+              tur adipisicing elit. Temporibus labore ex 
+              nesciunt debitis vero deserunt, nam delectus
+              saepe voluptate accusamus.</p>
+            <a href="post.html" class="btn btn-dark">
+              <i class="fas fa-chevron-right"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </dev>
+    </article>
+  </main>
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2022-Beowuff</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function(){
+      if(window.pageYOffset > 100){
+        navbar.classList.remove('top');
+
+        if(!scrolled){
+          navbar.style.transform = 'translateY(-90px)';
+        }
+        setTimeout(function(){
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        },200);
+      } 
+      else{
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+
+  </script>
+</body>
+</html>

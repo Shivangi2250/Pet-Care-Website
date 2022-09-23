@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ec8478f83d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/utility.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Posts</title>
+</head>
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <div class="company-icon">
+        <div class="icon">
+          <img src="../image_resources/home/beowuff1.png" alt="">
+        </div>
+        <div class="name">
+          <h1 class="logo">
+            <span>Beowuff</span>
+          </h1>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>Our Work</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="post">
+      <h2>Blog Post One</h2>
+      <p class="meta">
+        <i class="fas fa-user"></i> Posted by <strong>
+          Virendra Sharma
+        </strong> | Sept 20 2022
+      </p>
+      <img src="../image_resources/blog/blog1.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consecte
+        tur adipisicing elit. Temporibus labore ex 
+        nesciunt debitis vero deserunt, nam delectus
+        saepe voluptate accusamus.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit vero ipsum aliquid animi aperiam blanditiis ipsa? Odit cum quidem quasi ipsa sapiente nesciunt, placeat fuga exercitationem rem repudiandae temporibus eum?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quam modi nisi minus in ad officiis, dolorum voluptatem, laborum maxime sed natus iste. Quo quibusdam nulla accusantium est, repudiandae similique culpa neque eligendi, ut officia provident rerum ipsa suscipit quasi alias? Veniam, iusto temporibus odit ipsa dolorum quaerat minus voluptate!</p>
+
+    </section>
+  </main>
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2022-Beowuff</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function(){
+      if(window.pageYOffset > 100){
+        navbar.classList.remove('top');
+
+        if(!scrolled){
+          navbar.style.transform = 'translateY(-90px)';
+        }
+        setTimeout(function(){
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        },200);
+      } 
+      else{
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+
+  </script>
+</body>
+</html>

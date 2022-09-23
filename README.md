@@ -1,2 +1,2 @@
 # Pet-Care-Website
-A sample Pet care website using HTML, CSS, JS
+A fully responsive sample pet care website using HTML, CSS, JS
